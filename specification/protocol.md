@@ -15,4 +15,4 @@ gdt-mp Protocol Specificiation
 | Packet ID | Description | Field | Field Type | Notes |
 | --------- | ----------- | ----- | ---------- | ----- |
 | 0x00      | Server Identification | <ul><li>Packet ID</li><li>Protocol Version</li><li>Server Name</li></ul> | <ul><li>byte</li><li>int</li><li>string</li></ul> | Sent after recieving a client identification packet. |
-| 0x01      | Save Information | <ul><li>Packet ID</li><li>Current Date</li><li>Employees</li></ul> | <ul><li>byte</li><li>string</li><li>string</li></ul> | As soon as the client recieves this packet, they are ready to begin playing. Where 'Employees' is a json array. |
+| 0x01      | Save Information | <ul><li>Packet ID</li><li>Current Date</li><li>[Employees](models/employee.md)</li></ul> | <ul><li>byte</li><li>string</li><li>string</li></ul> | As soon as the client recieves this packet, they are ready to begin playing. Where '[Employees](models/employee.md)' is a json array. |
